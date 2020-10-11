@@ -1,0 +1,126 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+$font-color: rgb(24, 2, 2);
+
+.product{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.productCard
+{
+    box-shadow: 0 4px 8px 0 $font-color;
+    width: 350px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: arial;
+    background-color: whitesmoke;  
+}
+
+.product-title {
+    text-align: center;
+    color: $font-color;
+    font-weight: bold;
+    font-size: 25px;
+
+    }
+.productDetails {
+    color: $font-color;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button {
+    border: 2px solid $font-color;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:rgb(13, 13, 129);
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.checked {
+    color: orange;
+}
+
+.cost {
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(144, 116, 245);
+}
+
+.product-nav {
+    text-align: left;
+    color: $font-color;
+    font-weight: bold;
+    font-size: 35px; 
+}
+
+.image {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+ }
+
+.image .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 96;
+}
+
+.image .img-top1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 99;
+    
+}
+
+.image:hover .img-top{
+    display: inline;
+}
+
+.image:hover .img-top1 {
+    display: inline;
+}
+
+
+i{
+    background-size: 200%;
+    background-color: rgb(223, 238, 198);
+    margin-right: 15px;
+}
+
+i:hover{
+    background-color:rgb(6, 6, 247);
+}

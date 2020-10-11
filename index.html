@@ -4,102 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>  
     <title>Document</title>
-    <style>
-        body {
-           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .productCard {
-           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-           width: 350px;
-           margin-right: 20px;
-           margin-top: 20px;
-           text-align: center;
-           font-family: arial;
-           background-color: whitesmoke;  
-        }
-    
-        .productDetails {
-           color: rgb(26, 0, 51);
-           font-weight: bold;
-           font-size: 14px;
-        }
-        button {
-           border: none;
-           outline: 0;
-           display: inline-block;
-           padding: 8px;
-           color: white;
-           background-color:rgb(13, 13, 129);
-           text-align: center;
-           cursor: pointer;
-           width: 100%;
-           font-size: 18px;
-        }
-        button:hover, a:hover {
-           opacity: 0.7;
-        }
-        .checked {
-            color: orange;
-        }
-        .product { 
-            width: 100%;
-            height: auto;
-            padding: 20px;
-            display: flex;
-            flex-flow: row wrap;
-            
-        }
-        .product-title{
-           text-align: center;
-           color: black;
-           font-weight: bold;
-           font-size: 25px; 
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color:gray;
-        }
-
-        .product-nav {
-           text-align: left;
-           color: black;
-           font-weight: bold;
-           font-size: 15px; 
-        }
-        .image {
-        width: 300px;
-        height: 250px;
-        position: relative;
-        display: inline-block;
-        
-        }
-        .image .img-top {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-        }
-        .image:hover .img-top{
-            display: inline;
-        }
-        .image:hover .text {
-           display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 99;
-        } 
-
-     </style>
 </head>
 <body>
     <ul>
-    <P class="product-nav">Product Card</P>
+        <span class="product-nav">Product Card</span>
     </ul>
 <div class="product">
     <div class="productCard">
@@ -108,6 +18,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="https://th.bing.com/th/id/OIP.P-D_qJUZU5b7SKDfH-mY_gHaGk?pid=Api&rs=1"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Laptop</p>
         <span class="fa fa-star checked"></span>
@@ -116,8 +31,8 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
@@ -126,6 +41,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="http://ww1.prweb.com/prfiles/2011/02/04/8115749/Canon-T3i.JPG"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Camera</p>
         <span class="fa fa-star checked"></span>
@@ -134,8 +54,8 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
@@ -144,6 +64,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="http://www.breitlingshow.com/wp-content/uploads/2016/04/GUCCI-Dive-replica.jpg"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Watch</p>
         <span class="fa fa-star checked"></span>
@@ -152,8 +77,8 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
@@ -162,6 +87,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="https://cdn.siasat.com/wp-content/uploads/2020/07/GooglePixel-4a.jpg"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Mobile</p>
         <span class="fa fa-star checked"></span>
@@ -170,8 +100,8 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
@@ -180,6 +110,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="http://headphonescompared.com/wp-content/uploads/2014/12/bose-quiet-comfort-251.jpg"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Head Phones</p>
         <span class="fa fa-star checked"></span>
@@ -188,8 +123,8 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
@@ -198,6 +133,11 @@
             style="width:300px;height: 250px;"/>
             <img class="img-top" src="https://media1.popsugar-assets.com/files/thumbor/IevYycjAmQ9__Qg5LnxnVHeT9go/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2011/11/48/2/192/1922283/24c530c85e4d08ad_51C5FpcHcAL._SS400_/i/Harry-Potter-Page-Screen-Complete-Filmmaking-Journey.jpg"
             style="width:300px;height: 250px;"/>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Books</p>
         <span class="fa fa-star checked"></span>
@@ -206,21 +146,21 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     <div class="productCard">
         <div class="image">
             <img src="http://images.the-house.com/nike-harbor-sb-shoes-blk-white-14-1.jpg"
             style="width:300px;height: 250px;"/>
-            <div class="img-top">
-            <img  src="https://th.bing.com/th/id/OIP.kvdkian2p-gXvRTcJOIPiQHaEx?pid=Api&w=500&h=322&rs=1"
+            <img class="img-top"  src="https://th.bing.com/th/id/OIP.kvdkian2p-gXvRTcJOIPiQHaEx?pid=Api&w=500&h=322&rs=1"
             style="width:300px;height: 250px;"/>
-            <span class="fa fa-cart-arrow-down" style="font-size:24px;" ></span>
-            <span class="fa fa-heart-o" style="font-size:24px;"></span>
-            <span class="fa fa-low-vision" style="font-size:24px"></span>
-        </div>
+            <div class="img-top1">
+                <a href="#" ><i class="fa fa-cart-arrow-down" style="font-size:35px;color:rgb(11, 12, 12);" ></i></a>
+                <a href="#"><i class="fa fa-heart-o" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+                <a href="#"><i class="fa fa-low-vision" style="font-size:35px;color:rgb(11, 12, 12);"></i></a>
+            </div>
         </div>
         <p class="product-title">Foot Wear</p>
         <span class="fa fa-star checked"></span>
@@ -229,8 +169,8 @@
         <span class="fa fa-star"></span>
         <span class="fa fa-star"></span>
         <p class="productDetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <span style="text-decoration:line-through;">$300</span>
-        <span style="color: tomato;">$250</span>
+        <span class="cost" style="text-decoration:line-through;">$300</span>
+        <span class="cost" style="color: tomato;">$250</span>
         <p><button>Buy Now</button></p>
     </div>
     
