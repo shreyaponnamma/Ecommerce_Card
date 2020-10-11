@@ -29,6 +29,7 @@ html, body {
   text-align: center;
   font-family: arial;
   background-color: whitesmoke;
+  border-radius: 10px;
 }
 
 .product .product-title {
@@ -66,8 +67,14 @@ button:hover, a:hover {
   color: orange;
 }
 
+.cost1 {
+  font-size: 20px;
+  color: tomato;
+}
+
 .cost {
   font-size: 20px;
+  text-decoration: line-through;
 }
 
 ul {
@@ -86,8 +93,6 @@ ul {
 }
 
 .image {
-  width: 300px;
-  height: 250px;
   position: relative;
   display: inline-block;
 }
@@ -98,6 +103,8 @@ ul {
   top: 0;
   left: 0;
   z-index: 96;
+  width: 300px;
+  height: 250px;
 }
 
 .image .img-top1 {
@@ -106,6 +113,12 @@ ul {
   top: 50%;
   left: 30%;
   z-index: 99;
+}
+
+.image .img-1 {
+  width: 300px;
+  height: 250px;
+  padding: 2px;
 }
 
 .image:hover .img-top {
@@ -117,12 +130,18 @@ ul {
 }
 
 i {
-  background-size: 200%;
+  color: #180202;
   background-color: #dfeec6;
+  padding: 5px;
   margin-right: 15px;
+  border-radius: 5px;
 }
 
 i:hover {
   background-color: #0606f7;
+}
+
+a {
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */
