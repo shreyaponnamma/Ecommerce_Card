@@ -1,47 +1,45 @@
-body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 $font-color: rgb(24, 2, 2);
 
 .product{
     width: 100%;
-    height: auto;
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
 }
-    .productCard {
-        box-shadow: 0 2px 4px 0 gray;
-        width:250px;
-        height: auto;
-        margin-right: 25px;
-        margin-top: 25px;
-        font-family: arial;
-        background-color: whitesmoke;
-        border-radius: 10px;
-        text-align: center;
-        padding: 10px;
-    }
-    .product-title {
-        
-        color: $font-color;
-        font-weight: bold;
-        font-size: 20px;
-        margin-top: 2px;
-    }
-    .productDetails {
-        color: $font-color;
-        font-weight: bold;
-        font-size: 14px;
-        margin-top: 2px;
 
-    }
+.productCard {
+    box-shadow: 0 2px 4px 0 gray;
+    width:250px;
+    height: auto;
+    margin-right: 25px;
+    margin-top: 25px;
+    font-family: arial;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-title {
+    color: $font-color;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 2px;
+    font-style: italic;
+}
+
+.productDetails {
+    color: $font-color;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 2px;
+}
   
 
 button {
@@ -61,19 +59,18 @@ button {
     float:right;
 }
 
-
 button:hover, a:hover {
     transform: scale(1.1);
 }
 
 .checked {
     color: orange;
-    
 }
+
 .price {
     text-align: right;
-    
 }
+
 .cost1 {
     font-size: 23px;
     color: $font-color;
@@ -83,22 +80,6 @@ button:hover, a:hover {
     color: gray;
     font-size: 16px;
     text-decoration: line-through;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(144, 116, 245);
-}
-
-.product-nav {
-    text-align: left;
-    color: $font-color;
-    font-weight: bold;
-    font-size: 35px; 
 }
 
 .image {
@@ -136,6 +117,7 @@ ul {
 }
 
 .image:hover .img-top1 {
+
     display: inline;
     
 }
