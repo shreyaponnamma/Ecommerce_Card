@@ -37,7 +37,7 @@ html, body {
 .product-title {
   color: #180202;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 2px;
 }
 
@@ -67,8 +67,8 @@ button {
 }
 
 button:hover, a:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .checked {
@@ -144,26 +144,26 @@ ul {
 
 i {
   color: #180202;
-  background-color: #dfeec6;
+  background-color: #dff7ba;
   padding: 5px;
   margin-right: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
 i:hover {
-  background-color: #0606f7;
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  background-color: #5e5eeb;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 a {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .star {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .price {
