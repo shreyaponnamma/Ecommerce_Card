@@ -1,11 +1,15 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .product {
   width: 100%;
+  height: auto;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,7 +39,6 @@ html, body {
   font-weight: bold;
   font-size: 20px;
   margin-top: 2px;
-  font-style: italic;
 }
 
 .productDetails {
@@ -85,6 +88,21 @@ button:hover, a:hover {
   color: gray;
   font-size: 16px;
   text-decoration: line-through;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9074f5;
+}
+
+.product-nav {
+  text-align: left;
+  color: #180202;
+  font-weight: bold;
+  font-size: 35px;
 }
 
 .image {
