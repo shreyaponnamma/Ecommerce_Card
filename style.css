@@ -141,15 +141,13 @@ button:hover, a:hover {
 
 .image:hover .img-top {
   display: inline;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
 }
 
 .image:hover .img-top1 {
   display: inline;
 }
 
-i {
+#icon {
   color: #180202;
   background-color: #dff7ba;
   padding: 5px;
@@ -159,7 +157,7 @@ i {
   transition: all .2s ease-in-out;
 }
 
-i:hover {
+#icon:hover {
   background-color: #5e5eeb;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
@@ -180,5 +178,20 @@ a {
   margin-top: 5px;
   display: block;
   float: left;
+}
+
+#bag .b1[data-count]:after {
+  position: absolute;
+  right: 20%;
+  top: 20%;
+  content: attr(data-count);
+  font-size: 40%;
+  padding: 3px;
+  border-radius: 50px;
+  line-height: 1em;
+  color: white;
+  background: rgba(55, 24, 231, 0.85);
+  text-align: center;
+  min-width: 12px;
 }
 /*# sourceMappingURL=style.css.map */
