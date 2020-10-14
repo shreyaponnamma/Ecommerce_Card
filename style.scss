@@ -15,7 +15,7 @@ $font-color: rgb(24, 2, 2);
 
 .productCard {
     box-shadow: 0 2px 4px 0 gray;
-    width:250px;
+    width:200px;
     height: auto;
     margin-right: 25px;
     margin-top: 25px;
@@ -35,14 +35,39 @@ $font-color: rgb(24, 2, 2);
 }
 
 .productDetails {
+    display: none;
     color: $font-color;
     font-weight: bold;
     font-size: 14px;
     margin-top: 2px;
 }
+
+.productCard:hover{
+    height: 380px;
+}
+
+.productCard:hover .star{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    
+}
+
+.productCard:hover .productDetails{
+    display: inline;
+    text-align: center;
+}
+
+.productCard:hover .btn {
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+
   
 
-button {
+.btn {
+
     border: 2px solid $font-color;
     outline: 0;
     display: block;
@@ -55,8 +80,8 @@ button {
     height: 35px;
     font-size: 15px;
     border-radius: 10px;
+    float: right;
     transition: all .2s ease-in-out;
-    float:right;
 }
 
 button:hover, a:hover {
@@ -72,7 +97,7 @@ button:hover, a:hover {
 }
 
 .cost1 {
-    font-size: 23px;
+    font-size: 18px;
     color: $font-color;
 }
 
@@ -93,7 +118,7 @@ button:hover, a:hover {
         left: 0;
         z-index: 96;
         width: 200px;
-        height: 140px;
+        height: 200px;
     }
     .img-top1 {
         display: none;
@@ -104,20 +129,19 @@ button:hover, a:hover {
     }
     .img-1{
         width: 200px;
-        height: 140px;
+        height: 200px;
         padding: 2px;
 
     }
     
 }
 
-.image:hover .img-top{
+.productCard:hover .img-top{
     display: inline;
     
 }
 
-.image:hover .img-top1 {
-
+.productCard:hover .img-top1 {
     display: inline;
     
 }
@@ -142,12 +166,14 @@ a {
 }
 
 .star {
-    font-size: 12px;
+
+    display: none;
+    font-size: 15px;
     
 }
 
 .price {
-    margin-top: 20px;
+    margin-top: 10px;
     display: block;
     float: left;
 }
