@@ -18,7 +18,7 @@ $font-color: rgb(24, 2, 2);
 }
     .productCard {
         box-shadow: 0 2px 4px 0 gray;
-        width:250px;
+        width:200px;
         height: auto;
         margin-right: 25px;
         margin-top: 25px;
@@ -26,7 +26,7 @@ $font-color: rgb(24, 2, 2);
         background-color: whitesmoke;
         border-radius: 10px;
         text-align: center;
-        padding: 10px;
+        padding: 5px;
     }
     .product-title {
         
@@ -34,31 +34,49 @@ $font-color: rgb(24, 2, 2);
         font-weight: bold;
         font-size: 20px;
         margin-top: 2px;
+        font-style: italic;
     }
     .productDetails {
         color: $font-color;
         font-weight: bold;
-        font-size: 14px;
-        margin-top: 2px;
+        font-size: 13px;
 
     }
   
 
-button {
+.btn1 {
     border: 2px solid $font-color;
     outline: 0;
     display: block;
-    padding: 8px;
+    padding: 5px;
     color: white;
     background-color:rgb(13, 13, 129);
     text-align: center;
     cursor: pointer;
-    width: 100px;
-    height: 35px;
-    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
     border-radius: 10px;
     transition: all .2s ease-in-out;
-    float:right;
+    float: right;
+    margin-top: 10px;
+}
+.btn2 {
+    border: 2px solid $font-color;
+    outline: 0;
+    display: block;
+    padding: 5px;
+    color: white;
+    background-color:rgb(13, 13, 129);
+    text-align: center;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+    float: left;
+    margin-top: 10px;
 }
 
 
@@ -75,7 +93,7 @@ button:hover, a:hover {
     
 }
 .cost1 {
-    font-size: 23px;
+    font-size: 18px;
     color: $font-color;
 }
 
@@ -86,24 +104,10 @@ button:hover, a:hover {
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(144, 116, 245);
-}
-
-.product-nav {
-    text-align: left;
-    color: $font-color;
-    font-weight: bold;
-    font-size: 35px; 
-}
-
 .image {
     position: relative;
     display: inline-block;
+}
 
     .img-top {
         display: none;
@@ -113,25 +117,29 @@ ul {
         z-index: 96;
         width: 200px;
         height: 140px;
+
     }
     .img-top1 {
         display: none;
         position: absolute;
         top: 50%;
-        left: 30%;
+        left: 20%;
         z-index: 99;
+        
+        
     }
     .img-1{
         width: 200px;
         height: 140px;
         padding: 2px;
+        
 
     }
     
-}
 
 .image:hover .img-top{
     display: inline;
+    transition-delay: 1s;
     
 }
 
@@ -160,12 +168,15 @@ a {
 }
 
 .star {
-    font-size: 12px;
+    margin-top: 8px;
+    display: block;
+    font-size: 13px;
+    float: right;
     
 }
 
 .price {
-    margin-top: 20px;
+    margin-top:5px;
     display: block;
     float: left;
 }
