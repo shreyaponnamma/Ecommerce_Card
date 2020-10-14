@@ -17,7 +17,7 @@ $font-color: rgb(24, 2, 2);
     flex-flow: row wrap;
 }
     .productCard {
-        box-shadow: 0 2px 4px 0 gray;
+        box-shadow: 0 2px 4px 0 $font-color;
         width:250px;
         height: auto;
         margin-right: 25px;
