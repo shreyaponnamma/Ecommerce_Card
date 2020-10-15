@@ -141,7 +141,7 @@ html, body {
   z-index: 99;
 }
 
-.image:hover .img-top, .image .img-top1 {
+.image:hover .img-top1, .image:hover .img-top {
   display: inline;
 }
 
