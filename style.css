@@ -141,11 +141,7 @@ html, body {
   z-index: 99;
 }
 
-.image:hover .img-top1 {
-  display: inline;
-}
-
-.image:hover .img-top {
+.image:hover .img-top, .image .img-top1 {
   display: inline;
 }
 
@@ -177,7 +173,11 @@ html, body {
   color: orange;
 }
 
-#bag .b1[data-count]:after {
+.b1[data-count] {
+  font-size: 25px;
+}
+
+.b1[data-count]:after {
   position: relative;
   left: -8px;
   top: -8px;

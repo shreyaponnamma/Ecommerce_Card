@@ -140,20 +140,12 @@ $font-color: rgb(24, 2, 2);
             
     }
 
-    &:hover .img-top1{
+    &:hover .img-top ,.img-top1{
         display: inline;
     }
 
-    &:hover .img-top{
-        display: inline;
-        
-    }
 }
  
-    
-
-
-
 #icon{  
     font-size: 22px;
     color: $font-color;
@@ -171,7 +163,6 @@ $font-color: rgb(24, 2, 2);
 }
 
 
-
 .star {
     margin-top: 8px;
     display: block;
@@ -185,19 +176,24 @@ $font-color: rgb(24, 2, 2);
 }
 
 
-#bag .b1[data-count]:after{
-    position: relative;;
-    left:-8px;
-    top:-8px;
-    content: attr(data-count);
-    font-size:11px;
-    padding: 3px;
-    border-radius:50%;
-    opacity:0.9;
-    line-height:1em;
-    color: white;
-    background:rgba(55, 24, 231, 0.85);
-    text-align:center;
-    min-width: 18px;
+.b1[data-count]{
+
+    font-size: 25px;
+
+    &:after{
+        position: relative;
+        left:-8px;
+        top:-8px;
+        content: attr(data-count);
+        font-size:11px;
+        padding: 3px;
+        border-radius:50%;
+        opacity:0.9;
+        line-height:1em;
+        color: white;
+        background:rgba(55, 24, 231, 0.85);
+        text-align:center;
+        min-width: 18px;
+    }
 }
 
