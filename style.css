@@ -20,7 +20,7 @@ html, body {
           flex-flow: row wrap;
 }
 
-.productCard {
+.product .productCard {
   -webkit-box-shadow: 0 2px 4px 0 gray;
           box-shadow: 0 2px 4px 0 gray;
   width: 200px;
@@ -34,7 +34,7 @@ html, body {
   padding: 5px;
 }
 
-.product-title {
+.product .product-title {
   color: #180202;
   font-weight: bold;
   font-size: 20px;
@@ -42,7 +42,7 @@ html, body {
   font-style: italic;
 }
 
-.productDetails {
+.product .productDetails {
   color: #180202;
   font-weight: bold;
   font-size: 13px;
@@ -67,6 +67,11 @@ html, body {
   margin-top: 10px;
 }
 
+.btn1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .btn2 {
   border: 2px solid #180202;
   outline: 0;
@@ -86,25 +91,23 @@ html, body {
   margin-top: 10px;
 }
 
-button:hover, a:hover {
+.btn2:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.checked {
-  color: orange;
-}
-
 .price {
-  text-align: right;
+  margin-top: 5px;
+  display: block;
+  float: left;
 }
 
-.cost1 {
+.price .cost1 {
   font-size: 18px;
   color: #180202;
 }
 
-.cost {
+.price .cost {
   color: gray;
   font-size: 16px;
   text-decoration: line-through;
@@ -112,10 +115,15 @@ button:hover, a:hover {
 
 .image {
   position: relative;
-  display: inline-block;
 }
 
-.img-top {
+.image .img-1 {
+  width: 200px;
+  height: 140px;
+  padding: 2px;
+}
+
+.image .img-top {
   display: none;
   position: absolute;
   top: 0;
@@ -125,7 +133,7 @@ button:hover, a:hover {
   height: 140px;
 }
 
-.img-top1 {
+.image .img-top1 {
   display: none;
   position: absolute;
   top: 50%;
@@ -133,21 +141,16 @@ button:hover, a:hover {
   z-index: 99;
 }
 
-.img-1 {
-  width: 200px;
-  height: 140px;
-  padding: 2px;
+.image:hover .img-top1 {
+  display: inline;
 }
 
 .image:hover .img-top {
   display: inline;
 }
 
-.image:hover .img-top1 {
-  display: inline;
-}
-
 #icon {
+  font-size: 22px;
   color: #180202;
   background-color: #dff7ba;
   padding: 5px;
@@ -163,10 +166,6 @@ button:hover, a:hover {
           transform: scale(1.4);
 }
 
-a {
-  font-size: 22px;
-}
-
 .star {
   margin-top: 8px;
   display: block;
@@ -174,24 +173,23 @@ a {
   float: right;
 }
 
-.price {
-  margin-top: 5px;
-  display: block;
-  float: left;
+.star .checked {
+  color: orange;
 }
 
 #bag .b1[data-count]:after {
-  position: absolute;
-  right: 20%;
-  top: 20%;
+  position: relative;
+  left: -8px;
+  top: -8px;
   content: attr(data-count);
-  font-size: 40%;
+  font-size: 11px;
   padding: 3px;
-  border-radius: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
   line-height: 1em;
   color: white;
   background: rgba(55, 24, 231, 0.85);
   text-align: center;
-  min-width: 12px;
+  min-width: 18px;
 }
 /*# sourceMappingURL=style.css.map */
